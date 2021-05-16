@@ -1,3 +1,3 @@
-# Vanilla JavaScript App
+# irestartpcs.com Static Web App
 
-This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
+Dipping my toes into the GA release of Static Web Apps w/ free custom domain to do something with an unused domain.
