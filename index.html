@@ -1,34 +1,18 @@
 <html>
-<head><title>irestartpcs</title>
-<style>
-body {
-	background-color: #0078d7;
-	font-family: Segoe UI, sans-serif;
-	color: #fff;
-	padding-top:16.6%;
-	padding-left:10.4%;
-	}
-#stop{
-	font-size:12px;
-}
-</style>
+<head><title>OH NO</title>
+	<link rel=stylesheet href="css/style.css">
+	<script src="js/stop_generator.js"></script>
 </head>
-<body>
-<p style="font-size:180px;margin-block-start:0;margin-block-end:0;margin-top:-60px">:(</p>
-<p style="font-size:30px;margin-block-start:40px">Your PC ran into a problem and needs to restart. We're</br>
+<body onload=callStop()>
+<p class="frown">:(</p>
+<p class="errortext">Your PC ran into a problem and needs to restart. We're</br>
 just collecting some error info, and then we'll restart for</br>
 you.</br></br>
 0% Complete</br></p>
-<div class="footer" style="display:flex">
-<div class="qr code" style="height:150px;width:150px;"><img src="irestartpcs_resize.png"></div>
-<div class="info" style="flex-grow: 1;margin-left:10px"><p style="font-size:16px">For more information about this issue and possible fixes, just google it</p>
-<p id=stop style="font-size:12px">If you call your friend who "is good at computers" buy them a beer and give them this info:</br>
-STOP CODE: OOPS</p></div></div>
-
-<script>
-var STOP_CODES = ["MIMIKATZ_DETECTED","SYSTEM32_NOT_FOUND","CURSED_BY_WIZARD","5G_OVERLOADED"]
-var randomStop = STOP_CODES[Math.floor(Math.random()*STOP_CODES.length)]
-document.getElementById('stop').innerText = document.getElementById('stop').innerText.replace('OOPS',randomStop)
-</script>
+<div class="footer">
+<div class="qrcode"><img src="qr_code.png"></div>
+<div class="info"><p>For more information about this issue and possible fixes, just google it</p>
+<p id=stop></br></br>If you call your friend who "is good at computers" buy them a beer and give them this info:</br>
+</br>STOP CODE: OOPS</p></div></div>
 </body>
 </html>
