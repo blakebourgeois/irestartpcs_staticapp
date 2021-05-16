@@ -2,17 +2,19 @@
 <head><title>OH NO</title>
 	<link rel=stylesheet href="css/style.css">
 	<script src="js/stop_generator.js"></script>
+	<script src="js/progress.js"></script>
 </head>
 <body onload=callStop()>
 <p class="frown">:(</p>
 <p class="errortext">Your PC ran into a problem and needs to restart. We're</br>
 just collecting some error info, and then we'll restart for</br>
 you.</br></br>
-0% Complete</br></p>
+<div id="progress">0% Complete</div></br></p>
 <div class="footer">
 <div class="qrcode"><img src="qr_code.png"></div>
 <div class="info"><p>For more information about this issue and possible fixes, just google it</p>
 <p id=stop></br></br>If you call your friend who "is good at computers" buy them a beer and give them this info:</br>
 </br>STOP CODE: OOPS</p></div></div>
+<script type="text/javascript">collecting(0);</script>
 </body>
 </html>
